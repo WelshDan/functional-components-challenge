@@ -1,10 +1,11 @@
 import css from './App.module.css';
-import Sidebar from "./components/Sidebar";
+import StatefulGreeing from './components/StatefulGreeting';
+import StatefulGreeingWithCallback from './components/StatefulGreetingWithCallback';
 
 function App() {
   return (
-    <div className={css.App}>
-      <Sidebar />
+    <div className="App">
+      <StatefulGreeingWithCallback greeting="I'm a stateful class component" name="Dave" />
     </div>
   );
 }
