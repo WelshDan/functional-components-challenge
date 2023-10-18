@@ -1,11 +1,10 @@
 import css from './App.module.css';
-import StatefulGreeing from './components/StatefulGreeting';
-import StatefulGreeingWithCallback from './components/StatefulGreetingWithCallback';
+import StatefulGreeingWithPrevState from './components/StatefulGreetingWithPrevState';
 
 function App() {
   return (
     <div className="App">
-      <StatefulGreeingWithCallback greeting="I'm a stateful class component" name="Dave" />
+      <StatefulGreeingWithPrevState />
     </div>
   );
 }
